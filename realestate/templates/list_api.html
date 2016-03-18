@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+
+<link rel="stylesheet" href= '{% static "/static/css/base.css" %} '>
+
+<body>
+
+{%  for property in properties  %}
+
+    <a href="/dashboard/detail/{{ property.id }}"> Link to property </a>
+    {{ property.property_title }} </br >
+    {{ property.property_description }}</br >
+    {{ property.property_address }}</br >
+    {{ property.property_price }}</br >
+    {{ property.property_owner_name  }}</br >
+    {{ property_owner_phone   }}</br >
+    {{ property.property_owner_comments  }}</br >
+    {{ property.id  }}</br >
+    {{ property.date_updated  }}</br >
+    {{ property.date_created  }}</br >
+
+
+{% endfor %}
+
+</body>

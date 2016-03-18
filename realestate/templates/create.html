@@ -1,0 +1,92 @@
+{% load staticfiles %}
+
+<html>
+	<head>
+	    <link rel="stylesheet" href= '{% static "/static/css/main.css" %} '>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+		<title> Real estate dahsbaord </title>
+		<meta name="author" content="Khaled Gabr"> 
+	</head>
+
+	
+	
+<body>
+	<div class= main>
+	<nav class= "side_menu">
+	<img class="main_logo" src="/static/icons/logo.png" >
+	<ul>
+		<li>
+			<a href="#" class= "menu_item">
+				<img class = "menu_icon" src="/static/icons/home.png" >
+				<h3 class = "menu_text"> Home </h3>
+			</a>       
+	    </li>
+	    	<li>
+			<a href="https://realestate-estateship.c9users.io/dashboard/list/" class= "menu_item active_menu_item">
+				<img class = "menu_icon" src="/static/icons/listing.png" >
+				<h3 class = "menu_text"> Properties </h3>
+			</a>       
+	    </li>
+	    	<li>
+			<a href="#" class= "menu_item">
+				<img class = "menu_icon" src="/static/icons/statistics.png" >
+				<h3 class = "menu_text"> Statistics </h3>
+			</a>       
+	    </li>
+	    <li>
+			<a href="#" class= "menu_item">
+				<img class = "menu_icon" src="/static/icons/user.png" >
+				<h3 class = "menu_text"> User </h3>
+			</a>       
+	    </li>
+	    <li>
+			<a href="#" class= "menu_item">
+				<img class = "menu_icon" src="/static/icons/setting.png" >
+				<h3 class = "menu_text"> Setting </h3>
+			</a>       
+	    </li>
+    </ul>
+	</nav>
+
+	
+<div class= "upper_menu" >
+		<a href="https://realestate-estateship.c9users.io/dashboard/create/" class= "add_properties_button" >
+			<img class="add_icon" src="/static/icons/add_icon.png"> 
+			Add properties 
+		</a>
+		<img class= "upper_menu_item profile_icon" src="/static/icons/classprofile.png">
+		<img class= "upper_menu_item profile_icon_arrow" src="/static/icons/arrow.png">
+
+</div>
+	
+	
+	
+<div class= "main_section">
+	<h1 class="header"> Add a new Property</h1>
+	
+	
+	<form action="" method="post"> {% csrf_token %}
+		<ul class="contactList">
+        	{% for field in form %}
+            	<div class="fieldWrapper">
+	            	{{ field.errors }}
+	            	{{ field.label_tag }} {{ field }}
+	            	{% if field.help_text %}
+	            		<p class="help">{{ field.help_text|safe }}</p>
+	            	{% endif %}
+    			</div>
+			{% endfor %}
+		</ul>
+		<input type="submit" value="Submit">
+	</form>
+	
+	
+</div>
+
+</div>
+</body>
+	
+	
+	
+	
+</html>

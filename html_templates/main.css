@@ -8,8 +8,11 @@ ul {
 body{
     margin: 0px;
     background-color: #f6f7fa;
-    padding-left: 220px;
     font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    padding-left: 220px;
 }
 
 
@@ -186,4 +189,106 @@ h1{
     height:20px;
     margin: 0px 10px;
     
+}
+
+
+
+/**************/
+/* login page */
+/**************/
+
+.login_area{
+   margin: 0 auto;
+   width:600px;
+   margin-top: 200px;
+
+   
+}
+
+.login_header{
+    background: #0e1a35 ;
+    
+}
+.main_logo_login{
+    height: 35px;
+    margin: 20px;
+    
+}
+.login_text{
+    padding: 25px 30px 25px 30px ;
+    color: #fff;
+    float: right;
+    font-size:16px;
+    font-weight:400;
+
+}
+.login_active{
+    border-bottom-color: #5584ff;
+    border-bottom-style:solid;
+    border-bottom-width: 6px;
+}
+.login_text:hover{
+    opacity: 0.9;
+}
+
+
+.login_main{
+    background-color: #f6f7fa;
+    height: 300px;
+    
+}
+
+.form{
+    width: 600px;
+    height: 280px;
+    background: #edeff1;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+
+/* from css form code with little modification */
+.form_input {
+    display: block;
+    width: 309px;
+    height: 35px;
+    margin: 15px auto;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.login_button{
+    display: block;
+    background: #5584ff;
+    width: 314px;
+    padding: 12px;
+    color: #fff;
+    border: 0px;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/**************************************************/
+
+.lost_password{
+    text-align: center;
+    font-family: Arial;
+    color: gray;
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    font-size: 12px;
+}
+.lost_password:hover{
+    opacity: 0.9;
+}
+
+.login_title{
+    text-align: center;
+    color: #333;
 }

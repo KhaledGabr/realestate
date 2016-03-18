@@ -25,36 +25,6 @@ https://docs.djangoproject.com/en/dev/topics/db/
 https://docs.djangoproject.com/en/dev/ref/models/
 
 
-1) User
-user_id ( Primary Key )
-name
-username
-password
-
-
-
-
-2) Property
-property_id ( Primary Key )
-user_id (  FOREIGN KEY )
-
-property_name
-property_owner
-property_description
-property_address
-property_image
-
-property_price
-
-date_created
-date_removed
-
-
-
-3) Property image
-property_id
-property_image_url
-
 -------------------------------------- 
 
 
@@ -94,12 +64,13 @@ Template:
 
 
 References:
-PSD templte from Symu.co ( Liscence is included under PSD template )
+1) PSD templte from Symu.co ( Liscence is included under PSD template )
+2) Form CSS styles was taken from Pure_CSS_Login ( Liscence is included under pure-css-login-form)
 
-
-
-Courses I took to accomplish my project
+Some code was adapted from these courses
+Courses I took to accomplish my project: 
 
 1) Intro to Relational Databases - Udacity 
 2) Full Stack Foundations - Udacity 
 3) Django Fundemantals - pluralsight
+4) https://www.youtube.com/playlist?list=PLEsfXFp6DpzQFqfCur9CJ4QnKQTVXUsRy  - Youtube

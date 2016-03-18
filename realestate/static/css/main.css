@@ -1,0 +1,294 @@
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+    
+}
+
+body{
+    margin: 0px;
+    background-color: #f6f7fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    padding-left: 220px;
+}
+
+
+
+.side_menu {
+    background-color: #0e1a35;
+    width: 220px ;
+    margin: 0px;
+    padding: 0px;
+    
+    position: fixed;
+    display:block;
+    height: 100%;
+    margin-left: -220px;
+
+
+}
+
+
+.main_logo{
+    
+    width: 120px;
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+
+.menu_item {
+    height: 70px ;
+    display: block;
+    padding-left:35px;
+    border-top-color:#0d172e;
+    border-top-style:solid;
+    border-top-width: 1px;
+}
+
+
+.active_menu_item, .menu_item:hover {
+    background-color: #122143;
+    border-left-width: 10px;
+    border-left-color: #5584ff;
+    border-left-style:solid;
+    padding-left:25px;
+}
+
+.menu_icon{
+    margin-top:30px;
+    height : 14px;
+    float: left;
+}
+
+.menu_text{
+    margin-top:28px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration:none ;
+    float: left;
+    margin-left: 10px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.upper_menu {
+    background-color:#fff;
+    height:80px;
+    
+    border-bottom-width: 1px;
+    border-bottom-color: #d4d9e3;
+    border-bottom-style:solid;
+     
+    display:flex;
+    align-items: center;
+    padding-left:20px;
+    padding-right:40px;
+}
+
+
+
+.profile_icon{
+    height:40px;
+    margin-left: auto;
+}
+
+
+.profile_icon_arrow{
+    height:6px;
+    margin-left:10px;
+}
+
+.add_icon{
+    height:10px;
+    margin-right:5px;
+}
+
+.add_properties_button{
+    background-color:#5584FF;
+    color:#fff;
+    padding:10px 20px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    
+    border-radius: 20px;
+    margin-left:10px;
+}
+.add_properties_button:hover{
+    background-color:#6691FF;
+}
+
+.main_section {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:  50px;
+    
+}
+h1{
+    font-weight:500;
+    font-size: 24px;
+    color:#0e1a35;
+}
+.header{
+    display: inline;
+}
+
+
+.properties_number{
+    font-weight: 400;
+    font-size: 24px;
+    color: #8492af;
+    display: inline;
+    
+}
+
+
+
+.whole_table{
+    margin-top:40px;
+    border-collapse: collapse;
+}
+
+
+.tabletitle{
+    color: #8492af;
+}
+
+
+.singlecol{
+    padding-right:30px;
+    padding-left:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+    
+    border-color:#dadee7;
+    border-style:solid;
+    border-width: 1px;
+    
+}
+
+.single_title{
+    padding-bottom:20px;
+}
+
+.actual_data{
+    background-color:#fff;
+    margin-top: 40px;
+}
+.details{
+    height:20px;
+    margin: 0px 10px;
+    
+}
+
+
+
+/**************/
+/* login page */
+/**************/
+
+.login_area{
+   margin: 0 auto;
+   width:600px;
+   margin-top: 200px;
+
+   
+}
+
+.login_header{
+    background: #0e1a35 ;
+    
+}
+.main_logo_login{
+    height: 35px;
+    margin: 20px;
+    
+}
+.login_text{
+    padding: 25px 30px 25px 30px ;
+    color: #fff;
+    float: right;
+    font-size:16px;
+    font-weight:400;
+
+}
+.login_active{
+    border-bottom-color: #5584ff;
+    border-bottom-style:solid;
+    border-bottom-width: 6px;
+}
+.login_text:hover{
+    opacity: 0.9;
+}
+
+
+.login_main{
+    background-color: #f6f7fa;
+    height: 300px;
+    
+}
+
+.form{
+    width: 600px;
+    height: 280px;
+    background: #edeff1;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+
+/* from css form code with little modification */
+.form_input {
+    display: block;
+    width: 309px;
+    height: 35px;
+    margin: 15px auto;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.login_button{
+    display: block;
+    background: #5584ff;
+    width: 314px;
+    padding: 12px;
+    color: #fff;
+    border: 0px;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/**************************************************/
+
+.lost_password{
+    text-align: center;
+    font-family: Arial;
+    color: gray;
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    font-size: 12px;
+}
+.lost_password:hover{
+    opacity: 0.9;
+}
+
+.login_title{
+    text-align: center;
+    color: #333;
+}

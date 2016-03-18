@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+
+<link rel="stylesheet" href= '{% static "/static/css/base.css" %} '>
+
+<body>
+
+
+
+<form action="" method="post"> {% csrf_token %}
+    <ul class="contactList">
+        {% for field in form %}
+            <div class="fieldWrapper">
+            {{ field.errors }}
+            {{ field.label_tag }} {{ field }}
+            {% if field.help_text %}
+            <p class="help">{{ field.help_text|safe }}</p>
+            {% endif %}
+    </div>
+{% endfor %}
+    </ul>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
