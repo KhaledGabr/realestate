@@ -166,8 +166,8 @@ h1{
 
 
 .singlecol{
-    padding-right:30px;
-    padding-left:30px;
+    padding-right:20px;
+    padding-left:20px;
     padding-top:30px;
     padding-bottom:30px;
     
@@ -289,6 +289,10 @@ h1{
     border: 0px;
     border-radius: 5px;
     font-size: 17px;
+    cursor: pointer;
+}
+.login_button_add:hover{
+    background: #6691FF;
 }
 
 /**************************************************/
@@ -297,13 +301,15 @@ h1{
     
     width: 400px;
     background: #fff;
-    border: 0px;
     padding: 5px;
     font-size: 16px;
     border: 2px solid #fff;
     border-radius: 5px;
     margin-bottom:20px;
     margin-top:5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
 }
 
 .lost_password{
