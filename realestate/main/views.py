@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import property
 
@@ -15,17 +15,17 @@ def homepage(request):
 
 # Create
 def create(request):
-    form = PropertyForm( request.POST or None )
-    if form.is_valid():
-        instance = form.save(commit=False)
-        instance.save()
-
-    
-    
-    
+    form = PropertyForm( request.POST or None )    
     context = {
         "form" : form,
     }
+    if request.method == "POST":
+        if form.is_valid():
+            instance = form.save(commit=False)
+            instance.save()
+            return redirect ( "list")
+        return render ( request, "create.html", context )
+        
     return render ( request, "create.html", context )
     
 # READ
@@ -51,7 +51,9 @@ def update(request):
     return HttpResponse( "update")
 
 # Delete
-def delete(request):
-    return HttpResponse( "delete")
+def delete(request, id):
+    instance = property.objects.get( id=id )
+    instance.delete()
+    return redirect ( "list")
     
     

@@ -1,76 +1,40 @@
-Aim:
-Creating a web app for realtors to upload, and manage properties online.
+# Real Estate CMS ( Django )
+This is simple web application that gives realtors the ability to add, edit, and delete property listings to their website. The project is currently for educational purposes only and is not yet ready for production use.
 
-Github:
-https://github.com/hostship/realestate
-
-
-
+### Features:
+You can only Create, Read, and delete properties in this simple dashbaord. Therefore, Only the "Add properties button" & "Delete icon" is functioning.
+https://realestate-estateship.c9users.io/dashboard/list/
 
 
+### Work Done:
+* HTML/CSS Code Written using a ready-made PSD template.
 
-Version 1:
+* Django Models: A model is Python Classes that represents Database tables. It is important to use objects, instead of SQL statement Strings when developing web application because it makes debugging, and extending features more easily. Currently, one model only is create, which is Property Model, that holds fields like Property address, price, owner_name, etc.
 
+* Django Views: A View, or as it is known in other frameworks as Controller is what maps a URL to the HTML templates. Quering and updating the data base is also done in views if needed. I implemented five views the demonstrate the main CRUD opertations; however, I have a two reading views, One is used to list all realestates, and the other is to list only a single one.
 
+* Django Forms: Django makes it easy to add Forms, and validate users input. Therefore, I used it to create the forms needed to add a new property.
 
--------------------------------------- 
-
-Database:
-A user is the real estate agent that uses the system
-Single user can upload multiple properties
-A property can contain multiple images
-
-Main Refernces:
-https://docs.djangoproject.com/en/dev/topics/db/
-https://docs.djangoproject.com/en/dev/ref/models/
+* Django Templates: Using the static html templates, and the Django's powerful templating language, I was able to create data-driven dashboard.
 
 
--------------------------------------- 
+### Courses :
+I have taken these courses to learn back-end web development.
+* Intro to Relational Databases - Udacity
+* Full Stack Foundation - Udacity
+* Django Fundemantals - Pluralsight
+* Try Django 1.9 - Coding For Entrepreneurs
+* Django Basics - TreeHouse
+* Django Forms - TreeHouse
+
+### Refrences :
+* PSD templte from Symu.co ( Liscence is included under PSD template )
+* CSS Form Styles from Pure_CSS_Login ( Liscence is included under pure-css-login-form )
+
+### Version:
+Pre-alpha ( I couldn't find anything else before that )
+
+### Working on :
+I am currently working on Adding a Login/logout feature using Django's User Authentication Model. 
 
 
-
-
-
-
-HTML:
-1) Login
-2) Add property
-3) List of properties
-
-CSS:
-whatever is needed
-
-
-
-
-
-Django:
-
-Model : represents layer
-
-View:
--handles http requests
--retreiving data from database
--it may call component from the template layer
-
-Template:
-
-
-
-
-
-
-
-
-
-References:
-1) PSD templte from Symu.co ( Liscence is included under PSD template )
-2) Form CSS styles was taken from Pure_CSS_Login ( Liscence is included under pure-css-login-form)
-
-Some code was adapted from these courses
-Courses I took to accomplish my project: 
-
-1) Intro to Relational Databases - Udacity 
-2) Full Stack Foundations - Udacity 
-3) Django Fundemantals - pluralsight
-4) https://www.youtube.com/playlist?list=PLEsfXFp6DpzQFqfCur9CJ4QnKQTVXUsRy  - Youtube

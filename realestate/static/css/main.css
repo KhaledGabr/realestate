@@ -190,6 +190,13 @@ h1{
     margin: 0px 10px;
     
 }
+.details_delete{
+    height:20px;
+    margin: 0px 0px 0px 12px;
+}
+.delete_icon{
+    padding-left:10px;
+}
 
 
 
@@ -273,7 +280,31 @@ h1{
     font-size: 17px;
 }
 
+.login_button_add{
+    display: block;
+    background: #5584ff;
+    width: 314px;
+    padding: 12px;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
 /**************************************************/
+
+.myfieldclass{
+    
+    width: 400px;
+    background: #fff;
+    border: 0px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom:20px;
+    margin-top:5px;
+}
 
 .lost_password{
     text-align: center;

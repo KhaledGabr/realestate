@@ -70,14 +70,16 @@
         	{% for field in form %}
             	<div class="fieldWrapper">
 	            	{{ field.errors }}
-	            	{{ field.label_tag }} {{ field }}
-	            	{% if field.help_text %}
+	            	{{ field.label_tag }} 
+	            	</br >
+	            	{{ field }}
+	            	{% if field.help_text %} 
 	            		<p class="help">{{ field.help_text|safe }}</p>
 	            	{% endif %}
     			</div>
 			{% endfor %}
 		</ul>
-		<input type="submit" value="Submit">
+		<input type="submit" class="login_button_add" value="Submit">
 	</form>
 	
 	

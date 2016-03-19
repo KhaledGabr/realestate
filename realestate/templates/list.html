@@ -80,6 +80,12 @@
 				<td class= "singlecol">   {{ property.property_owner_name  }} </td>
 				<td class= "singlecol"> Active </td>
 				<td class= "singlecol">  <img class=" details"src="/static/icons/options.png"> </td>
+				
+				<td class= "singlecol delete_icon">  
+					<a href="https://realestate-estateship.c9users.io/dashboard/delete/{{ property.id}}">
+						<img class="details_delete" src="/static/icons/delete.png"> 
+					</a>
+				</td>
 			</tr>
 			{% endfor %}
 

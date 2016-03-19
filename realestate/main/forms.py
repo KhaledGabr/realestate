@@ -22,3 +22,8 @@ class PropertyForm( forms.ModelForm ):
     def __init__(self, *args, **kwargs):
         super(PropertyForm, self).__init__(*args, **kwargs)
         self.fields['property_title'].widget.attrs.update({'class' : 'myfieldclass'})
+        self.fields['property_description'].widget.attrs.update({'class' : 'myfieldclass'})
+        self.fields['property_address'].widget.attrs.update({'class' : 'myfieldclass'})
+        self.fields['property_price'].widget.attrs.update({'class' : 'myfieldclass'})
+        self.fields['property_owner_name'].widget.attrs.update({'class' : 'myfieldclass'})
+        self.fields['property_owner_phone'].widget.attrs.update({'class' : 'myfieldclass'})

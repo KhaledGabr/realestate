@@ -10,10 +10,10 @@ urlpatterns = [
     
     
     url(r'^create/$', views.create ),
-    url(r'^list/$', views.list),
+    url(r'^list/$', views.list, name="list"),
     url(r'^detail/(?P<id>\d+)$', views.detail ),
     url(r'^update/$', views.update ),
-    url(r'^delete/$', views.delete ),
+    url(r'^delete/(?P<id>\d+)$', views.delete ),
     
 
 ]
