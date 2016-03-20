@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join ( os.path.dirname(BASE_DIR), "static_cdn") # Static folder configration ( From Try Django 1.9 EP:25 Youtube )
 
 STATICFILES_DIRS = (
-    '/django/realestate/realestate/static"
+    '/django/realestate/realestate/static'
 )
 
 
