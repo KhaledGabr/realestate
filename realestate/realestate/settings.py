@@ -121,9 +121,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+'''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"), 
 ]
-
 STATIC_ROOT = os.path.join ( os.path.dirname(BASE_DIR), "static_cdn") # Static folder configration ( From Try Django 1.9 EP:25 Youtube )
+'''
+
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
+STATICFILES_DIRS = (
+  os.path.join(SITE_ROOT, 'static/'),
+)
+
+
 MEDIA_ROOT = os.path.join ( os.path.dirname(BASE_DIR), "media_cdn") # Static folder configration ( From Try Django 1.9 EP:25 Youtube )
