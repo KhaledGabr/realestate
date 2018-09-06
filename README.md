@@ -2,9 +2,7 @@
 This is simple web application that gives realtors the ability to add, edit, and delete property listings to their website. The project is currently for educational purposes only and is not yet ready for production use.
 
 ### Features:
-You can only Create, Read, and delete properties in this simple dashbaord. Therefore, Only the "Add properties button" & "Delete icon" is functioning.
-https://realestate-estateship.c9users.io/dashboard/list/
-
+You can  Create, Read, and delete properties using with a simple dashbaord. 
 
 ### Work Done:
 * HTML/CSS Code Written using a ready-made PSD template.
@@ -31,10 +29,5 @@ I have taken these courses to learn back-end web development.
 * PSD templte from Symu.co ( Liscence is included under PSD template )
 * CSS Form Styles from Pure_CSS_Login ( Liscence is included under pure-css-login-form )
 
-### Version:
-Pre-alpha ( I couldn't find anything else before that )
-
-### Working on :
-I am currently working on Adding a Login/logout feature using Django's User Authentication Model. 
 
 
